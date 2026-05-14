@@ -115,6 +115,7 @@ In 8-bit mode, all LCD data pins (`D0-D7`) are connected to Arduino.
 ---
 
 ## 📌 Connections (8-Bit Mode)
+![Interfacing LCD with Arduino in 8-bit mode](https://playwithcircuit.com/wp-content/uploads/2023/05/Interfacing-LCD-with-Arduino-in-8-bit-mode.jpg)
 
 | LCD Pin | Arduino Connection |
 |---------|-------------------|
@@ -144,6 +145,7 @@ This is the most commonly used LCD interfacing method because it saves Arduino G
 ---
 
 ## 📌 Connections (4-Bit Mode)
+![Interfacing LCD with Arduino in 4-bit mode](https://playwithcircuit.com/wp-content/uploads/2023/06/Interfacing-LCD-with-Arduino-in-4-bit-mode.jpg)
 
 | LCD Pin | Arduino Connection |
 |---------|-------------------|
