@@ -127,7 +127,11 @@ In 8-bit mode, all LCD data pins (`D0-D7`) are connected to Arduino.
 | D5 | 7 |
 | D6 | 8 |
 | D7 | 9 |
-
+| LED(+)(Pin 15) | Connected to Vcc via 220 ohm resistor
+| LED(-)(Pin 16) | Connected to Ground
+| VSS/GND (Pin 1) |	Connected to Ground
+| VDD/VCC (pin 2)| Connected to 5V
+| VEE/Vo (Pin 3) | Connected to Variable pin of 10k POT to Control Contrast of LCD
 ---
 
 # 🔧 Interfacing LCD in 4-Bit Mode
@@ -148,6 +152,8 @@ This is the most commonly used LCD interfacing method because it saves Arduino G
 | D5 | 7 |
 | D6 | 8 |
 | D7 | 9 |
+| LED(+)(Pin 15) | Connected to Vcc via 220 ohm resistor
+| LED(-)(Pin 16) | Connected to Ground
 
 Pins `D0-D3` remain unused and are connected to Ground.
 
