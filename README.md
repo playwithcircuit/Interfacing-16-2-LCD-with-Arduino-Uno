@@ -130,25 +130,6 @@ In 8-bit mode, all LCD data pins (`D0-D7`) are connected to Arduino.
 
 ---
 
-# 💻 Arduino Code (8-Bit Mode)
-
-```cpp
-#include <LiquidCrystal.h>
-
-LiquidCrystal lcd(12, 11, 2, 3, 4, 5, 6, 7, 8, 9);
-
-void setup() {
-  lcd.begin(16, 2);
-  lcd.print("Hello World!");
-}
-
-void loop() {
-
-}
-```
-
----
-
 # 🔧 Interfacing LCD in 4-Bit Mode
 
 In 4-bit mode, only four data lines (`D4-D7`) are used.
@@ -172,36 +153,6 @@ Pins `D0-D3` remain unused and are connected to Ground.
 
 ---
 
-# 💻 Arduino Code (4-Bit Mode)
-
-```cpp
-#include <LiquidCrystal.h>
-
-LiquidCrystal lcd(12, 11, 6, 7, 8, 9);
-
-void setup() {
-  lcd.begin(16, 2);
-  lcd.print("LCD 4-Bit Mode");
-}
-
-void loop() {
-
-}
-```
-
----
-
-# 🔌 Interfacing I2C LCD with Arduino
-
-I2C LCD modules simplify wiring by using only two communication lines:
-
-- SDA
-- SCL
-
-This is ideal for projects with multiple sensors or limited GPIO pins.
-
----
-
 ## 📌 I2C LCD Connections
 
 | I2C LCD Pin | Arduino UNO |
@@ -213,30 +164,7 @@ This is ideal for projects with multiple sensors or limited GPIO pins.
 
 ---
 
-# 💻 Arduino Code for I2C LCD
-
-```cpp
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-
-LiquidCrystal_I2C lcd(0x27, 16, 2);
-
-void setup() {
-  lcd.init();
-  lcd.backlight();
-
-  lcd.setCursor(0, 0);
-  lcd.print("I2C LCD");
-}
-
-void loop() {
-
-}
-```
-
----
-
-# 😀 Display Custom Characters on LCD
+# Display Custom Characters on LCD
 
 The HD44780 controller allows users to create custom characters using CGRAM memory.
 
@@ -264,39 +192,6 @@ Maximum:
 
 ---
 
-# 💻 Arduino Code for Custom Character
-
-```cpp
-#include <LiquidCrystal.h>
-
-LiquidCrystal lcd(12, 11, 6, 7, 8, 9);
-
-byte smiley[8] = {
-  B00000,
-  B01010,
-  B01010,
-  B00000,
-  B10001,
-  B01110,
-  B00000,
-};
-
-void setup() {
-  lcd.begin(16, 2);
-
-  lcd.createChar(0, smiley);
-
-  lcd.setCursor(0, 0);
-  lcd.write(byte(0));
-}
-
-void loop() {
-
-}
-```
-
----
-
 # 📷 Project Overview
 
 This project demonstrates:
@@ -317,14 +212,6 @@ This project demonstrates:
 - Home automation
 - Robotics
 - Industrial monitoring systems
-
----
-
-# 📚 Libraries Used
-
-- `LiquidCrystal.h`
-- `Wire.h`
-- `LiquidCrystal_I2C.h`
 
 ---
 
@@ -372,12 +259,6 @@ Feel free to:
 - Add new LCD examples
 - Optimize code
 - Report issues
-
----
-
-# 📄 License
-
-This project is open-source and available under the MIT License.
 
 ---
 
