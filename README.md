@@ -52,6 +52,7 @@ These LCDs are commonly used in:
 ---
 
 # 🔌 16×2 LCD Pinout
+![16x2 LCD Pinout](https://playwithcircuit.com/wp-content/uploads/2023/05/16x2-LCD-pinout-Diagram-768x614.jpg)
 
 | LCD Pin | Description |
 |---------|-------------|
